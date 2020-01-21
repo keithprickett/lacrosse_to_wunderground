@@ -13,25 +13,27 @@ Upload data from your La Crosse Personal Weather Station to Wunderground (weathe
 
 5. Clone the required support repos, for example
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  cd ~/
-  mkdir myweather
-  cd myweather
-  git clone git@github.com:keithprickett/lacrosse_to_wunderground.git .
-  git clone git@github.com:keithprickett/wunderground_uploader.git
-  git clone git@github.com:keithprickett/lacrosse_weather.git
+    cd ~/
+    mkdir myweather
+    cd myweather
+    git clone git@github.com:keithprickett/lacrosse_to_wunderground.git .
+    git clone git@github.com:keithprickett/wunderground_uploader.git
+    git clone git@github.com:keithprickett/lacrosse_weather.git
 
 6. Create your initial starting point, which could be 0 or another UTC timestamp, for example:
 
-.. code-block:: bash
+  .. code-block:: bash
 
-  cd ~/myweather
-  echo 0 > myweather_ts
+    cd ~/myweather
+    echo 0 > myweather_ts
 
 7. Run the program
 
-  cd ~/myweather && python3 ./lacrosse_to_wunderground.py `echo myweather_ts` > myweather_ts
+  .. code-block:: bash
+  
+    cd ~/myweather && python3 ./lacrosse_to_wunderground.py `echo myweather_ts` > myweather_ts
 
 8. Repeat step 7 as often as desired to update, or put it in a cron or other automation system.
 
