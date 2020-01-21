@@ -12,8 +12,8 @@ from wunderground_uploader.uploader import wunderground_upload_data_point
 
 email = 'YOUR LA CROSSE VIEW ACCOUNT EMAIL'
 password = 'YOUR LA CROSSE VIEW ACCOUNT PW'
-station_id = 'YOUR WUNDERGROUN PWS STATION ID'
-station_key = 'YOUR WUNDERGROUN PWS STATION KEY'
+station_id = 'YOUR WUNDERGROUND PWS STATION ID'
+station_key = 'YOUR WUNDERGROUND PWS STATION KEY'
 
 
 def celsius_to_fahrenheit(celsius):
