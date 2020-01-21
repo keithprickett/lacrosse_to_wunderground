@@ -32,7 +32,7 @@ Upload data from your La Crosse Personal Weather Station to Wunderground (weathe
 7. Run the program
 
 ```
-  cd ~/myweather && python3 ./lacrosse_to_wunderground.py `echo myweather_ts` > myweather_ts
+  cd ~/myweather && python3 ./lacrosse_to_wunderground.py `cat myweather_ts` > myweather_ts
 ```
 
 8. Repeat step 7 as often as desired to update, or put it in a cron or other automation system.
